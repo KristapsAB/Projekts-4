@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,100;1,600&display=swap');
+:root {
+  --primary-bg: #2C3E50; /* Dark background color */
+  --secondary-bg: #34495E; /* Hover/focus background color */
+  --third-bg: #fff; /* Hover/focus background color */
+  --text-color: hsl(0, 0%, 98%); /* Text color */
+  --button-1: #a881af;
+  --button-2:#80669d;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--primary-bg), var(--secondary-bg));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 3rem;
+}
+h2{
+    text-align: left;
+    font-size:3rem;
+    color:white;
+}
+
+.login-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.login-input::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-button {
+  background-color: #fff;
+  color: #fa71cd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%;
+  }
+}
+
+.sign-up-link {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+
+}
+.galvana-kaste {
+  margin-left: 120px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+.galvana-kaste1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.otra-kaste {
+  width: 100%; /* Use 100% width for smaller screens */
+  max-width: 600px; /* Set a max-width for larger screens if needed */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.new-event-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color:var(--text-color);
+}
+.new-event-input{
+  /* margin-top:20px;
+  width:90%;
+  height:6vh;
+  background-color:#FFFFFF;
+  border:none;
+  font-family: 'Inknut Antiqua', sans-serif; */
+  height: 6vh;
+  /* border-radius: 6px; */
+  background-color: transparent;
+  width: 90%;
+  /* padding-left: 40px; */
+  border: none;
+  border-bottom: 1px solid #02CCFA;    
+  outline:none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+font-weight: bold;
+color:var(--text-color);
+
+}
+.new-event-button{
+  width:100%;
+  height:8vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:80px;
+}
+.new-event-button-style{
+  height:4vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--button-2);
+  border-radius:5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .galvana-kaste {
+    margin-top: 80px; /* Adjust the top margin for smaller screens */
+  }
+
+  .otra-kaste {
+    width: 50%;
+    max-width: 100%; /* Set a max-width for smaller screens */
+  }
+  
+  .new-event-input {
+    width: 100%; /* Make the input fields full-width on smaller screens */
+  }
+}

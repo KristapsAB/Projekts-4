@@ -1,0 +1,311 @@
+:root {
+  --primary-bg: #2C3E50; /* Dark background color */
+  --secondary-bg: #34495E; /* Hover/focus background color */
+  --text-color: #ECF0F1; /* Text color */
+  --content-bg: #f0f0f0; /* Content background color */
+  --button-bg: #3498db; /* Button background color */
+  --button-text: #ffffff; /* Text color for buttons */
+  --link-color: #3498db; /* Link color */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,100;1,600&display=swap');
+
+.intro-main-page {
+  position: relative; /* Make the container relative to allow z-index to work */
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  background-image: url('../images/tryStyle.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Set a z-index to ensure it's below the navbar */
+}
+
+.main-page{
+  background-color:#ffffff;
+  color:black;
+}
+
+.welcome-container {
+  padding: 60px; /* Add padding as needed */
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6rem;
+  color: white;
+  font-weight: 900;
+  MARGIN-RIGHT: -50px;
+}
+.h3teksts{
+  font-family: 'Poppins', sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  MARGIN-RIGHT: -50px;
+}
+.button {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+a {
+  color: var(--link-color);
+}
+.second-page{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: center;
+  margin: auto;
+  background-color:#ffffff;
+}
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  font-weight: bold;
+  border-bottom: 2.5px solid #000;
+  display: inline-block; /* Add this line */
+}
+
+.h4teksts {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: none;
+  display: inline-block; /* Add this line */
+  width:600px;
+}
+.music-type-container{
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  width: 880px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.music-type{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: none;
+  display: inline-block; /* Add this line */
+  margin:10px;
+
+}
+.MusicType-image-container {
+  background-image: url('../images/pop.jpeg');
+  height: 25vh;
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: center; /* Center items horizontally */
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to hide extra text */
+}
+
+.MusicType-image-container .text-at-bottom {
+  color: white; /* Set text color */
+  font-size: 14px; /* Set text size */
+  font-weight: bold; /* Set text weight if needed */
+  margin-bottom: 10px; /* Add margin to adjust the distance from the bottom */
+  font-size: 1.2rem;
+}
+
+.HipHop-image-container {
+  background-image: url('../images/hiphop.jpg');
+  height: 25vh;
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: center; /* Center items horizontally */
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to hide extra text */
+}
+
+.HipHop-image-container .text-at-bottom {
+  color: white; /* Set text color */
+  font-size: 14px; /* Set text size */
+  font-weight: bold; /* Set text weight if needed */
+  margin-bottom: 10px; /* Add margin to adjust the distance from the bottom */
+  font-size: 1.2rem;
+}
+
+.Jazz-image-container {
+  background-image: url('../images/Jazz.jpg');
+  height: 25vh;
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: center; /* Center items horizontally */
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to hide extra text */
+}
+
+.Jazz-image-container .text-at-bottom {
+  color: white; /* Set text color */
+  font-size: 14px; /* Set text size */
+  font-weight: bold; /* Set text weight if needed */
+  margin-bottom: 10px; /* Add margin to adjust the distance from the bottom */
+  font-size: 1.2rem; 
+}
+
+.Metal-image-container {
+  position: relative;
+  background-image: url('../images/metal.jpg');
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to hide extra text */
+}
+.Rap-image-container {
+  position: relative;
+  background-image: url('../images/rap.jpg');
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to hide extra text */
+}
+.Rap-image-container .text-at-bottom {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  color: white; /* Set text color */
+  font-size: 1.2rem;
+  font-weight: bold; /* Set text weight if needed */
+}
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: none;
+  display: inline-block; /* Add this line */
+  width:100%;
+  margin:10px;
+  text-align: bottom;
+}
+.Metal-image-container .text-at-bottom {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  color: white; /* Set text color */
+  font-size: 1.2rem;
+  font-weight: bold; /* Set text weight if needed */
+}
+.Metal-image-container .text-at-bottom {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  color: white; /* Set text color */
+  font-size: 1.2rem; /* Set text size */
+  font-weight: bold; /* Set text weight if needed */
+  width: 100%;
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Poppins', sans-serif;
+}
+.microphone{
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0; /* Fallback background color */
+  background-image: url('../images/mic.jpg');
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+/* ... (previous styles) */
+
+@media screen and (max-width: 884px) {
+  .intro-main-page {
+    background-size: contain;
+  }
+
+  .welcome-container {
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  h3, .h3teksts {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+  }
+
+  .h4teksts {
+    width: 100%; /* Make width full for smaller screens */
+  }
+
+  .music-type-container {
+    width: 100%; /* Make width full for smaller screens */
+  }
+
+  .MusicType-image-container,
+  .HipHop-image-container,
+  .Jazz-image-container,
+  .Metal-image-container,
+  .Rap-image-container {
+    width: calc(100% - 20px); /* Make width full for smaller screens with margin adjustment */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .MusicType-image-container img,
+  .HipHop-image-container img,
+  .Jazz-image-container img,
+  .Metal-image-container img,
+  .Rap-image-container img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+  }
+
+  .MusicType-image-container .text-at-bottom,
+  .HipHop-image-container .text-at-bottom,
+  .Jazz-image-container .text-at-bottom,
+  .Metal-image-container .text-at-bottom,
+  .Rap-image-container .text-at-bottom {
+    max-width: 100%; /* Set a maximum width for the text to avoid overflow */
+    text-align: center;
+  }
+
+  .second-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; /* Align content to center */
+    align-content: stretch;
+    margin-right: auto; /* Center the container */
+    margin-left: auto; /* Center the container */
+    width: calc(100% - 20px); /* Make width full for smaller screens with margin adjustment */
+  }
+  .music-type{
+    width:300px;
+  }
+}

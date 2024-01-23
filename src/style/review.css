@@ -1,0 +1,278 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+:root {
+  --primary-bg: #2C3E50;
+  /* Dark background color */
+  --secondary-bg: #34495E;
+  /* Hover/focus background color */
+  --third-bg: #fff;
+  /* Hover/focus background color */
+  --text-color: hsl(0, 0%, 98%);
+  /* Text color */
+  --button-1: #a881af;
+  --button-2: #80669d;
+  --new-bg: #7502FA;
+  --new-color: #02CCFA;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.review-data {
+  background: #34495e;
+  border-radius: 34px;
+  margin: 10px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 25px;
+  width:275px;
+}
+.expanded-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 800px;
+  height: 80vh;
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.review-image {
+  width: 192px;
+  height: 192px;
+  max-width:192px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  overflow: hidden; /* Add this line to hide overflow */
+  position: relative;
+  background-image: url('../images/maukuSencis.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.absoloute-image {
+  width: 100%;
+  max-width: 252px;
+  height: 252px;
+  border-radius: 20%;
+  overflow: hidden; /* Add this line to hide overflow */
+  position: relative;
+  background-image: url('../images/maukuSencis.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.review-image::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.review-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.review-stars {
+  font-size: 24px;
+  
+}
+
+.star {
+  color: gold;
+  margin-right: 5px;
+}
+
+.expanded-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  color: var(--new-color);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+}
+
+.review-top-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+h20 {
+  font-size: 3rem;
+  color: white;
+  margin: 10px;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.review-tickets-sold {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.star-rating-cc {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  align-items: center;
+}
+
+.review-star-rating-counter {
+  font-size: 1.25rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.review-review-sold {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.comment-review {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-content: center;
+}
+
+.user-comment-review {
+  max-width: 1000px;
+}
+
+.user-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.user-comment {
+  width: 1000px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .review-data {
+    height: auto;
+    margin-left:40px;
+  }
+
+  .expanded-container {
+    width: 95%;
+  }
+
+  .absoloute-image {
+  }
+  .star-rating-cc{
+      text-align: center;
+    width: 100%;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 600px) {
+  .review-data {
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .expanded-container {
+    width: 95%;
+  }
+
+  .absoloute-image {
+    /* Adjust the max-width to make it 1.5 times smaller */
+    max-width: 66.66%; /* 100% / 1.5 = 66.66% */
+  }
+
+  .star-rating-cc {
+    text-align: center;
+    width: 100%;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .review-data {
+    width: 100%;
+  }
+
+  .expanded-container {
+    width: 95%;
+  }
+
+  .absoloute-image {
+    /* Adjust the max-width to make it 1.5 times smaller */
+    max-width: 66.66%; /* 100% / 1.5 = 66.66% */
+  }
+
+  .star-rating-cc {
+    text-align: center;
+    width: 100%;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 1039px) {
+  .review-data {
+    width:60%;
+  }
+
+  .expanded-container {
+    width: 95%;
+  }
+
+  .absoloute-image {
+    /* Adjust the max-width to make it 1.5 times smaller */
+    max-width: 66.66%; /* 100% / 1.5 = 66.66% */
+  }
+
+  .star-rating-cc {
+    text-align: center;
+    width: 100%;
+    width: fit-content;
+  }
+}

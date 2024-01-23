@@ -1,0 +1,130 @@
+:root {
+  --primary-bg: #2C3E50; /* Dark background color */
+  --secondary-bg: #34495E; /* Hover/focus background color */
+  --third-bg: #fff; /* Hover/focus background color */
+  --text-color: hsl(0, 0%, 98%); /* Text color */
+  --button-1: #a881af;
+  --button-2: #80669d;
+  --new-bg: #7502FA;
+  --new-color: #02CCFA;
+  --star-color-selected: var(--button-1);
+  --star-color-unselected: #ccc; /* Adjust the color for unselected stars */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.h2teksti {
+  color: white;
+  text-align: center;
+}
+
+.H3teksti h3 {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.orders-page-main-container {
+  width: 80%;
+  margin: 0 auto;
+  display:flex;
+
+}
+.past-orders-container{
+  display:flex;
+  margin:0 auto;
+  width:80%;
+}
+
+.orders-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.order-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center; /* Added for center alignment of text */
+  margin:10px;
+}
+
+.order-item-container p {
+  margin: 5px 0;
+}
+
+.purchase-button,
+.download-pdf-button {
+  background-color: var(--button-1);
+  color: var(--third-bg);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.purchase-button:hover,
+.download-pdf-button:hover {
+  background-color: var(--button-2);
+}
+
+.review-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.star-rating-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.star-rating-container label {
+  cursor: pointer;
+}
+
+.star-rating-container input {
+  display: none;
+}
+
+.star-rating-container label::before {
+  content: '★';
+  font-size: 20px;
+  color: var(--star-color-unselected); /* Initial color for unselected stars */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.star-rating-container input:checked + label::before {
+  color: var(--star-color-selected); /* Color for selected stars */
+}
+
+@media (min-width: 600px) {
+  .orders-page-main-container {
+    width: 80%;
+  }
+
+  .orders-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
