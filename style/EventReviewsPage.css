@@ -1,0 +1,123 @@
+/* EventReviewsPage.css */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+    --primary-bg: #2C3E50; /* Dark background color */
+    --secondary-bg: #34495E; /* Hover/focus background color */
+    --text-color: #ECF0F1; /* Text color */
+    --content-bg: #f0f0f0; /* Content background color */
+    --button-bg: #3498db; /* Button background color */
+    --button-text: #ffffff; /* Text color for buttons */
+    --link-color: #3498db; /* Link color */
+    --button-1: #a881af;
+    --button-2: #80669d;
+    --button-3: pink;
+  }
+  
+  .EventReviewPage-container {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-bg);
+    border-radius: 8px;
+  }
+  
+  .EventReviewPage-loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .EventReviewPage-events-container {
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .EventReviewPage-event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .EventReviewPage-event-item {
+    background-color: var(--primary-bg);
+    border: 1px solid var(--secondary-bg);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .EventReviewPage-event-item:hover {
+    background-color: var(--secondary-bg);
+  }
+  
+  .EventReviewPage-event-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    text-align: left;
+  }
+  
+  .EventReviewPage-event-image {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  
+  .EventReviewPage-event-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .EventReviewPage-event-reviews-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .EventReviewPage-event-review-item {
+    border: 2px solid var(--secondary-bg);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .EventReviewPage-event-review-username {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .EventReviewPage-event-review-user-rating {
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .EventReviewPage-event-review-comment {
+    padding-left: 2px;
+    color: var(--text-color);
+  }
+
+  
+  @media (max-width: 375px) {
+    .EventReviewPage-container {
+      flex-direction: column;
+      padding: 10px;
+      margin-left: 20px;
+    }
+  
+    .EventReviewPage-event-item {
+      flex-basis: 100%;
+    }
+  }
+  
